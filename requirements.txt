@@ -24,3 +24,5 @@ hjson
 psutil
 sounddevice
 spacy==3.7.5
+arabic2latin
+
