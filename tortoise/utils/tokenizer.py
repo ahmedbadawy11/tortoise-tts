@@ -4,7 +4,7 @@ import re
 import inflect
 import torch
 from tokenizers import Tokenizer
-from arabic2latin import arabic_to_latin 
+# from arabic2latin import arabic_to_latin 
 
 # Regular expression matching whitespace:
 from unidecode import unidecode
@@ -142,8 +142,8 @@ def transliteration_cleaners(text):
 def english_cleaners(text):
   '''Pipeline for English text, including number and abbreviation expansion.'''
   # text = convert_to_ascii(text)
-  text = arabic_to_latin(text)
-  text = lowercase(text)
+  # text = arabic_to_latin(text)
+  # text = lowercase(text)
   # text = expand_numbers(text)
   # text = expand_abbreviations(text)
   text = collapse_whitespace(text)
